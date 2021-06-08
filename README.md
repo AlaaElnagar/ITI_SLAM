@@ -17,13 +17,19 @@
 - Reading of heading data "IMU" and passing it using controller to serial monitor 
 - Making Ethernet driver to connect our controller with jetson board or labtop and provide high speed data transfere 
 
-# ROS Section 
+# ROS phases 
 
 - Ability of making high quality map as mentiond above 
+- localize a robot in an environment
+- perform path planning from an initial position to a goal destination
+- avoid obstacles while executing the planned path
 - Reading lidar data using ```rplidar_ros2``` pkg
 - Making ```py_serial``` pkg to recive all of our controller data in ROS 
--
--
+
+# We can use
+- ```Cartographer``` pkg to build the environment map and then providing the map to a ```map_server```
+-  ```AMCL``` pkg to give robot accurate localization 
+- ```dual_ekf``` to fuse "IMU","Wheel_odometry" and lidar to get accurate estimated pose 
 
 
 
