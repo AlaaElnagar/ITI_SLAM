@@ -31,6 +31,22 @@
 -  ```AMCL``` pkg to give robot accurate localization 
 - ```dual_ekf``` to fuse "IMU","Wheel_odometry" and lidar to get accurate estimated pose 
 
+# Today  Progress 10 jun 2021
+- Runing ```Robotlocalization``` pkg 
+- Static transformation for laser using ```tf2_ros_static_transform_publisher```
+- Map generation using ```cartographer```  
+- map deployment into ```nav2_bringup```
+## Result 
+  It works !
+# Next steps
+-impelementation of all of the above in real robot 
+
+## Real robot requirements 
+1- Receiving 
+    Odometry data from controller 
+    Laser data from ```rplidar_ros2``` pkg
+    
+  
 
 
 
