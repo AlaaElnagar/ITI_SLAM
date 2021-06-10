@@ -33,7 +33,7 @@
 
 # Today  Progress 10 jun 2021
 - Runing ```Robotlocalization``` pkg 
-- Static transformation for laser using ```tf2_ros_static_transform_publisher```
+- Static transformation for laser using ```tf2_ros_static_transform_publisher``` using ```ros2 run tf2_ros static_transform_publisher 0. 0. 0. 0. 0. 0. base_link laser```
 - Map generation using ```cartographer```  
 - map deployment into ```nav2_bringup```
 ## Result 
