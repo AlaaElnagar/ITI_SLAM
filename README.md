@@ -53,8 +53,9 @@
 ## used pkgs
   
 - ```slam_toolbox```   ```git clone -b foxy-devel https://github.com/SteveMacenski/slam_toolbox/tree/foxy-devel ``` 
-  note:
-    don't forget to change the base_footprint into base_link in slam_toolbox config directory ```    base_frame: base_link #base_footprint```
+  - note:
+   -  don't forget to change the base_footprint into base_link in slam_toolbox config directory ```    base_frame: base_link ```
+    
 - ```robot_localization```   ```git clone -b https://github.com/cra-ros-pkg/robot_localization/tree/foxy-devel```
 ### Used commands 
 
