@@ -1,9 +1,0 @@
-sudo su
-//type your password
-cd /
-cd dev
-chown username ttyUSB0
-
-
-chmod a+rw /dev/ttyUSB0
-
