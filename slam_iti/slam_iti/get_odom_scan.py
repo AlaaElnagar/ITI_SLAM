@@ -11,18 +11,18 @@ class my_node(Node):
     def __init__(self):
 
         super().__init__("sub_node")
-        self.lidar_sub=self.create_subscription(LaserScan,"/scan",self.get_lidar_topic,10) 
+        self.lidar_sub=self.create_subscription(LaserScan,"/sc",self.get_lidar_topic,10) 
         self.odom_sub=self.create_subscription(Odometry,"/odometry/wheel",self.get_odom_topic,10) 
 
 
-        self.lidar_pub=self.create_publisher(LaserScan,"slam/scan",10)
-        self.odom_pub=self.create_publisher(Odometry,"slam/Odometry",10)
+        self.lidar_pub=self.create_publisher(LaserScan,"scan",10)
+        self.odom_pub=self.create_publisher(Odometry,"odom",10)
 
         self.get_logger().info("lidar & odom  subscriper and publisher is started")
 #publish lidar data which we get from Bag file  with fresh time stamp
     def get_lidar_topic(self,msg):
         lidar_data = LaserScan()
-        lidar_data.header.frame_id = "lazer"
+        lidar_data.header.frame_id = msg.header.frame_id 
         lidar_data.header.stamp=self.get_clock().now().to_msg()
         lidar_data.angle_min=msg.angle_min
         lidar_data.angle_max=msg.angle_max

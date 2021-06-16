@@ -1,3 +1,6 @@
+import os
+from glob import glob
+
 from setuptools import setup
 
 package_name = 'slam_iti'
@@ -10,6 +13,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name), glob('launch/*.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -20,6 +24,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+        'get_odom_scan=slam_iti.get_odom_scan:main',
+        'read_plan_trajectory=slam_iti.read_plan_trajectory:main',
+        'odom=slam_iti.odom:main',
+        'sub_n=slam_iti.sub_n:main',
         ],
     },
 )

@@ -1,0 +1,29 @@
+[0.249s] Invoking command in '/home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/build/slam_iti': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti --editable --build-directory /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/build/slam_iti/build --no-deps install_data --install-dir /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti
+[0.482s] running develop
+[0.623s] running egg_info
+[0.623s] creating slam_iti.egg-info
+[0.623s] writing slam_iti.egg-info/PKG-INFO
+[0.624s] writing dependency_links to slam_iti.egg-info/dependency_links.txt
+[0.625s] writing entry points to slam_iti.egg-info/entry_points.txt
+[0.625s] writing requirements to slam_iti.egg-info/requires.txt
+[0.625s] writing top-level names to slam_iti.egg-info/top_level.txt
+[0.626s] writing manifest file 'slam_iti.egg-info/SOURCES.txt'
+[0.653s] reading manifest file 'slam_iti.egg-info/SOURCES.txt'
+[0.654s] writing manifest file 'slam_iti.egg-info/SOURCES.txt'
+[0.684s] running build_ext
+[0.684s] Creating /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/python3.8/site-packages/site.py
+[0.686s] Creating /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/python3.8/site-packages/slam-iti.egg-link (link to .)
+[0.687s] Installing get_odom_scan script to /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/slam_iti
+[0.687s] Installing odom script to /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/slam_iti
+[0.687s] Installing read_plan_trajectory script to /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/slam_iti
+[0.687s] Installing sub_n script to /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/slam_iti
+[0.687s] 
+[0.688s] Installed /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/build/slam_iti
+[0.688s] running install_data
+[0.688s] creating /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/ament_index
+[0.688s] creating /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/ament_index/resource_index
+[0.688s] creating /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/ament_index/resource_index/packages
+[0.688s] copying resource/slam_iti -> /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/ament_index/resource_index/packages
+[0.688s] copying package.xml -> /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/slam_iti
+[0.688s] copying launch/tf_.launch.py -> /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/slam_iti
+[0.708s] Invoked command in '/home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/build/slam_iti' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti --editable --build-directory /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/build/slam_iti/build --no-deps install_data --install-dir /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti

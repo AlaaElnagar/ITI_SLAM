@@ -1,0 +1,2 @@
+bool close_obstacle_detected
+float32 min_distance
