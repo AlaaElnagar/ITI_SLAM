@@ -46,6 +46,29 @@
     Odometry data from controller 
     Laser data from ```rplidar_ros2``` pkg
     
+    
+
+# Slam_toolbox
+
+## used pkgs
+  
+- ```slam_toolbox```   ```git clone -b foxy-devel https://github.com/SteveMacenski/slam_toolbox/tree/foxy-devel ``` 
+  note:
+    don't forget to change the base_footprint into base_link in slam_toolbox config directory ```    base_frame: base_link #base_footprint```
+- ```robot_localization```   ```git clone -b https://github.com/cra-ros-pkg/robot_localization/tree/foxy-devel```
+### Used commands 
+
+
+- <img src="https://github.com/AlaaElnagar/ITI_SLAM/blob/main/img/slam_commands.png" />
+
+###rqt_graph 
+
+- <img src="https://github.com/AlaaElnagar/ITI_SLAM/blob/main/img/rosgraphv1.png" />
+
+
+
+
+    
   
 
 
