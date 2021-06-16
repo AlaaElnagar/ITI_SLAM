@@ -1,6 +1,6 @@
 # 2D Lidar slam 
 
-- <img src="https://raw.githubusercontent.com/AlaaElnagar/ITI_SLAM/main/pic/slam.jpg" />
+- <img src="https://github.com/AlaaElnagar/ITI_SLAM/blob/main/img/iti_liberary%20_map_v1.0.png" />
 
 ## Target 
 
