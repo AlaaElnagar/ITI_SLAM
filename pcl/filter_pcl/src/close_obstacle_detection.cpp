@@ -34,20 +34,20 @@ class PointcloudFilter : public rclcpp::Node
     void subscribe_message(const sensor_msgs::msg::PointCloud2::SharedPtr message) const
     {
 
-	carkyo_msgs::msg::CameraEmergency::SharedPtr camera_state ;
+        carkyo_msgs::msg::CameraEmergency camera_state =carkyo_msgs::msg::CameraEmergency() ;
 	
 	if (message->data.size()>50)
 	{
-	camera_state->close_obstacle_detected=true ;
+	camera_state.close_obstacle_detected=true ;
 	
 	}
 	
 	else {
 	
-       camera_state->close_obstacle_detected =false  ;
+       camera_state.close_obstacle_detected =false  ;
 	}
 	
-	publisher_cropped->publish(*camera_state) ;
+	publisher_cropped->publish(camera_state) ;
         }
         
 
