@@ -1,0 +1,4 @@
+bool arrived
+string name
+---
+bool success

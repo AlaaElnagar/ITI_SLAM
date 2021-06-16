@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+
+<model name="realsense">
+
+  <link name="camera_depth_optical_frame">
+    <inertial>
+      <pose>0.0  0  0.0 0 0 0</pose>
+      <inertia>
+        <ixx>0.001</ixx>
+        <ixy>0.000</ixy>
+        <ixz>0.000</ixz>
+        <iyy>0.001</iyy>
+        <iyz>0.000</iyz>
+        <izz>0.001</izz>
+      </inertia>
+      <mass>0.1</mass>
+    </inertial>
+
+    <collision name="realsense_collision">
+      <pose>0.0  0  0.0 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>0.09 0.025  0.025</size>
+        </box>
+      </geometry>
+    </collision>
+
+    <visual name="realsense_visual">
+      <pose>0.0  0  0.0 0 0 1.57</pose>
+      <geometry>
+        <box>
+          <size>0.09 0.025  0.025</size>
+        </box>
+      </geometry>
+    </visual>
+
+
+
+    <sensor name="intel_realsense_d435_depth" type="depth">
+      <always_on>1</always_on>
+      <update_rate>5</update_rate>
+      <pose>0.0  0  0.0 0 0 0</pose>
+      <camera name="realsense_depth_camera">
+      </camera>
+      <plugin name="intel_realsense_d435_depth_driver" filename="libgazebo_ros_camera.so">
+        <ros>
+        </ros>
+        <camera_name>intel_realsense_d435_depth</camera_name>
+        <frame_name>camera_depth_optical_frame</frame_name>
+        <hack_baseline>0.07</hack_baseline>
+        <min_depth>0.28</min_depth>
+        <max_depth>5.0</max_depth>
+      </plugin>
+    </sensor>
+
+  </link>
+
+</model>
+</sdf>

@@ -1,0 +1,6 @@
+[console_scripts]
+get_odom_scan = slam_iti.get_odom_scan:main
+odom = slam_iti.odom:main
+read_plan_trajectory = slam_iti.read_plan_trajectory:main
+sub_n = slam_iti.sub_n:main
+

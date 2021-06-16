@@ -1,0 +1,27 @@
+running develop
+running egg_info
+creating slam_iti.egg-info
+writing slam_iti.egg-info/PKG-INFO
+writing dependency_links to slam_iti.egg-info/dependency_links.txt
+writing entry points to slam_iti.egg-info/entry_points.txt
+writing requirements to slam_iti.egg-info/requires.txt
+writing top-level names to slam_iti.egg-info/top_level.txt
+writing manifest file 'slam_iti.egg-info/SOURCES.txt'
+reading manifest file 'slam_iti.egg-info/SOURCES.txt'
+writing manifest file 'slam_iti.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/python3.8/site-packages/site.py
+Creating /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/python3.8/site-packages/slam-iti.egg-link (link to .)
+Installing get_odom_scan script to /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/slam_iti
+Installing odom script to /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/slam_iti
+Installing read_plan_trajectory script to /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/slam_iti
+Installing sub_n script to /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/lib/slam_iti
+
+Installed /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/build/slam_iti
+running install_data
+creating /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/ament_index
+creating /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/ament_index/resource_index
+creating /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/ament_index/resource_index/packages
+copying resource/slam_iti -> /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/ament_index/resource_index/packages
+copying package.xml -> /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/slam_iti
+copying launch/tf_.launch.py -> /home/alaa/Desktop/self_driving_ITI/ROS2/py_ws/src/slam_iti/install/slam_iti/share/slam_iti
