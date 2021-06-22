@@ -6,7 +6,7 @@ Making map for ITI Library by differant slam algorithms.
 
 
 
-![](/home/saeed/ros_ws/ITI_SLAM/img/project_goal_maps00.jpg)
+![](/ITI_SLAM/img/project_goal_maps00.jpg)
 
 
 
