@@ -1,3 +1,44 @@
+# SLAM PROJECT 
+
+Final project for Low Speed Vehicle SLAM Project.
+
+Making map for ITI Library by differant slam algorithms.
+
+
+
+![](/home/saeed/ros_ws/ITI_SLAM/img/project_goal_maps00.jpg)
+
+
+
+## **Project Goals**
+
+The goal of this project was to make slam with different algorithms in ROS2 and test and review
+
+the results and provide best way to get best result.
+
+ For this one needed to:
+
+- Design robot's environment with the Building Editor in Gazebo.
+- Teleoperate the robot and manually test SLAM.
+- Use the ROS navigation stack and manually command the robot using  the 2D Nav Goal arrow in rviz to move to 2 different desired positions  and orientations.
+- Write a pick_objects node that commands the robot to move to the desired pickup and drop off zones.
+- Write an add_markers node that subscribes to the robot odometry and publishes pick-up and drop-off markers to rviz.
+- modify pick_objects node and add_markers node to establish  communication between them, to complete desired home service robot  implementation
+
+### 
+
+### Prerequisites
+
+(since I have not tested on multiple platforms, and versions, I am listing only the configuration I used)
+
+- Ubuntu 20.04 OS 
+- ROS2 Foxy
+- following ROS packages were used and the process of obtaining them is detailed below:
+  - [Cartographer](https://github.com/ros2/cartographer)
+  - [Slam Toolbox](https://github.com/SteveMacenski/slam_toolbox)
+  - [Rtapmap](https://github.com/introlab/rtabmap_ros/tree/ros2)
+  - [Rviz](https://github.com/ros2/rviz)
+
 # 2D Lidar slam 
 
 - <img src="https://github.com/AlaaElnagar/ITI_SLAM/blob/main/img/iti_liberary%20_map_v1.0.png" />
@@ -51,11 +92,11 @@
 # Slam_toolbox
 
 ## used pkgs
-  
+
 - ```slam_toolbox```   ```git clone -b foxy-devel https://github.com/SteveMacenski/slam_toolbox/tree/foxy-devel ``` 
   - note:
    -  don't forget to change the base_footprint into base_link in slam_toolbox config directory ```    base_frame: base_link ```
-    
+  
 - ```robot_localization```   ```git clone -b https://github.com/cra-ros-pkg/robot_localization/tree/foxy-devel```
 ### Used commands 
 
@@ -69,8 +110,7 @@
 
 
 
-    
-  
+​    
 
 
 
