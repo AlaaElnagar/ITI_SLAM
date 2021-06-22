@@ -14,16 +14,16 @@ Making map for ITI Library by differant slam algorithms.
 
 The goal of this project was to make slam with different algorithms in ROS2 and test and review
 
-the results and provide best way to get best result.
+the results and provide best configuration to get best result.
 
  For this one needed to:
 
-- Design robot's environment with the Building Editor in Gazebo.
-- Teleoperate the robot and manually test SLAM.
-- Use the ROS navigation stack and manually command the robot using  the 2D Nav Goal arrow in rviz to move to 2 different desired positions  and orientations.
-- Write a pick_objects node that commands the robot to move to the desired pickup and drop off zones.
-- Write an add_markers node that subscribes to the robot odometry and publishes pick-up and drop-off markers to rviz.
-- modify pick_objects node and add_markers node to establish  communication between them, to complete desired home service robot  implementation
+- Download and build slam package.
+- Work online or offline (means use bag file or connect to your robot).
+- Make sure the transformation is correct.
+- Change some configration in slam peackage.
+- Run your package and visualize the result to rviz.
+- Save your map
 
 ### 
 
@@ -38,6 +38,14 @@ the results and provide best way to get best result.
   - [Slam Toolbox](https://github.com/SteveMacenski/slam_toolbox)
   - [Rtapmap](https://github.com/introlab/rtabmap_ros/tree/ros2)
   - [Rviz](https://github.com/ros2/rviz)
+
+
+
+
+
+## Cartographer
+
+
 
 # 2D Lidar slam 
 
