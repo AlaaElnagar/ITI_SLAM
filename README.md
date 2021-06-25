@@ -1,3 +1,7 @@
+[TOC]
+
+
+
 # SLAM PROJECT 
 
 Final project for Low Speed Vehicle SLAM Project.
@@ -6,14 +10,6 @@ Making map for ITI Library by differant slam algorithms.
 
 
 - <img src="https://github.com/AlaaElnagar/ITI_SLAM/blob/main/img/slams.png" />
-
-
-
-Tabel of Content
-
-[TOC]
-
-
 
 
 ## **Project Goals**
