@@ -42,13 +42,15 @@ the results and provide best configuration to get best result.
 
 
 
+[TOC]
+
 
 
 ## Cartographer
 
 
 
-<<<<<<< HEAD
+
 ### Package Description
 
 Cartographer is a system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations.  
@@ -69,20 +71,77 @@ mkdir carto_ws/src -p
 cd ..
 ```
 
-start Build your Package.
+## start Build your Package.
 
 ```
 colcon build --symlink-install
 ```
 
+## now ,show time...
+
+we have a bag file contains lider laser-scan and odometry/wheel msg for [ITI LIBRARY](https://www.iti.gov.eg/iti/home).
+
+note:
+you should using fresh time stamp frames if you use bag files.
+use this pkg to refesh your time stamp [fresh time stamp pkg](https://github.com/SaeedMohamedd/Refresh-Time-Stamp-in-Bag-file).
 
 
 
+first transformation:
 
-##  Build Package     
-=======
+1 static transformation between baselink and laser frame
+
+```
+ros2 run tf2_ros static_transform_publisher 0. 0. 0. 0. 0. 0. base_link laser
+```
+
+2. tranformation from map to odom using robot localization package.
+
+```
+ros2 launch robot_localization  dual_ekf_navsat_example.launch.py 
+```
+
+
+
+second run cartographer node and show map in rviz
+
+```
+ros2 launch turtlebot3_cartographer cartographer.launch.py
+```
+
+third save the map using map saver 
+
+```
+ros2 run nav2_map_server map_saver_cli -f /home/saeed/maps/iti_library/map
+```
+
+the output should be two files  map.yaml and map.pgm
+
+![](/img/cartographer_map.png)
+
+
+
+## Cartographer Drawbacks
+
+1. for this time that i write this artical there are  137 open issue you can track the progress of this issue using this link[cartographer_ros_issue](https://github.com/cartographer-project/cartographer_ros/issues).
+2. the documentation and tutorial are avilabile in ros1 only .
+3. not working well on ros2 foxy.
+
+
+
+### SO, we move to SLAM ToolBox.
+
+
 
 ## Slam Toolbox
+
+
+
+
+
+
+
+
 
 
 
@@ -90,7 +149,22 @@ colcon build --symlink-install
 ## Rtabmap
 
 
->>>>>>> a567e8ade5c616e5bb705b488ced574082205538
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 2D Lidar slam 
 
