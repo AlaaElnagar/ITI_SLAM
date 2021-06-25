@@ -9,6 +9,12 @@ Making map for ITI Library by differant slam algorithms.
 
 
 
+Tabel of Content
+
+[TOC]
+
+
+
 
 ## **Project Goals**
 
@@ -42,7 +48,7 @@ the results and provide best configuration to get best result.
 
 
 
-[TOC]
+
 
 
 
@@ -134,6 +140,10 @@ the output should be two files  map.yaml and map.pgm
 
 
 ## Slam Toolbox
+
+
+
+
 
 
 
