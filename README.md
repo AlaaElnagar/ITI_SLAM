@@ -127,7 +127,7 @@ the output should be two files  map.yaml and map.pgm
 
 ## Cartographer Drawbacks
 
-1. for this time that i write this artical there are  137 open issue you can track the progress of this issue using this link[cartographer_ros_issue](https://github.com/cartographer-project/cartographer_ros/issues).
+1. for this time that i write this artical there are  137 open issue you can track the progress of this issue using this link [cartographer_ros_issue](https://github.com/cartographer-project/cartographer_ros/issues).
 2. the documentation and tutorial are avilabile in ros1 only .
 3. not working well on ros2 foxy.
 
@@ -138,6 +138,88 @@ the output should be two files  map.yaml and map.pgm
 
 
 ## Slam Toolbox
+
+###  introduction
+
+Slam Toolbox is a set of tools and capabilities for 2D SLAM built by [Steve Macenski](https://www.linkedin.com/in/steve-macenski-41a985101) while at [Simbe Robotics](https://www.simberobotics.com/), maintained whil at Samsung Research, and largely in his free time.
+
+This project contains the ability to do most everything any other  available SLAM library, both free and paid, and more. This includes:
+
+- Ordinary point-and-shoot 2D SLAM mobile robotics folks expect  (start, map, save pgm file) with some nice built in utilities like  saving maps
+- Continuing to refine, remap, or continue mapping a saved (serialized) pose-graph at any time
+- life-long mapping: load a saved pose-graph continue mapping in a  space while also removing extraneous information from newly added scans
+- an optimization-based localization mode built on the pose-graph.  Optionally run localization mode without a prior map for "lidar  odometry" mode with local loop closures
+- synchronous and asynchronous modes of mapping
+- kinematic map merging (with an elastic graph manipulation merging technique in the works)
+- plugin-based optimization solvers with a new optimized Google Ceres based plugin
+- RVIZ plugin for interacting with the tools
+- graph manipulation tools in RVIZ to manipulate nodes and connections during mapping
+- Map serialization and lossless data storage
+- ... more but those are the highlights.
+
+For more details on this [Slam Toolbox Repo](https://github.com/SteveMacenski/slam_toolbox) .
+
+## Getting start
+
+you can download slam toolbox Ros2 from this [Slam Toolbox Repo](https://github.com/SteveMacenski/slam_toolbox) .
+
+make sure that you download the right branch from the repo,in my case i choose foxy-devel branch. 
+
+create your workspace folder and inside this directory cerate src folder.
+
+```
+mkdir slam_toolbox_ws/src -p
+```
+
+ Put that you download in src folder and change your directory back to slam_toolbox_ws.
+
+```
+cd ..
+```
+
+## start Build your Package.
+
+```
+colcon build --symlink-install
+```
+
+## now ,show time...
+
+we have a bag file contains lider laser-scan and odometry/wheel msg for [ITI LIBRARY](https://www.iti.gov.eg/iti/home).
+
+note:
+you should using fresh time stamp frames if you use bag files.
+use this pkg to refesh your time stamp [fresh time stamp pkg](https://github.com/SaeedMohamedd/Refresh-Time-Stamp-in-Bag-file).
+
+
+
+first transformation:
+
+1 static transformation between baselink and laser frame
+
+```
+ros2 run tf2_ros static_transform_publisher 0. 0. 0. 0. 0. 0. base_link laser
+```
+
+2. tranformation from map to odom using robot localization package.
+
+```
+ros2 launch robot_localization  dual_ekf_navsat_example.launch.py 
+```
+
+ه Important notes  :
+
+in slam_tool
+
+3. run slam toolbox node:
+   - offline_launch.py                                   ====>     using bag file.
+   - online_sync_launch.py                          ====>    using high computational power
+   - online_async_launch.py                        ====>  limited computational power
+   - lifelong_launch.py                                  ====> complete mapping on old map.
+   - localization_launch.py                           ====> localization mode
+   - merge_maps_kinematic_launch.py     ====> merge maps
+
+
 
 
 
